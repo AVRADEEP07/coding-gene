@@ -26,7 +26,7 @@ const [showHome, setShowHome] = useState(true)
 
 async function reviewCode(){
 
-const response = await axios.post('http://coding-gene.onrender.com/ai/get-review', {code})
+const response = await axios.post('https://coding-gene.onrender.com/ai/get-review', {code})
 setReview(response.data)
 console.log(response.data)
 }
